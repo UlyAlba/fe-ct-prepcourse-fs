@@ -42,7 +42,7 @@ function obtenerSaludo(nombre) {
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
    var Saludo;
-   Saludo = "Hola " + nombre;
+   Saludo = "Hola " + nombre + "!";
    return Saludo;
 }
 
