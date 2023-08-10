@@ -3,34 +3,51 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
+   for (var i = 0; i < 1; i++)   {
+      return array[i];
+   }
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   for (var i=0;i < array.length;i++)  {
+      if (i == (array.length)-1)  {
+         return array[i];
+      }
+   }
 }
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   var LongitudDelArreglo = array.length;
+   return LongitudDelArreglo;
 }
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   var UnoMas = array.map((num) => {return num+1});
+   return UnoMas;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   var ElementoAgregado = array.push(elemento);
+   return ElementoAgregado;
+
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   var ElementoAgregado = array.unshift(elemento);
+   return ElementoAgregado;
 }
 
 function dePalabrasAFrase(palabras) {
@@ -39,18 +56,27 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
+   var Frase = palabras.join(" ");
+   return Frase;
 }
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   var Contiene = array.includes(elemento);
+   return Contiene;
 }
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   var SumaElementos = 0;
+   for (var i=0; i < arrayOfNums.length;i++)  {
+       SumaElementos = SumaElementos + arrayOfNums[i];
+   }
+   return SumaElementos;
 }
 
 function promedioResultadosTest(resultadosTest) {
